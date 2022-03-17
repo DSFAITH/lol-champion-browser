@@ -1,4 +1,4 @@
-import { startServer } from './source/index.js'
+import { startServer } from './src/index.js'
 
 
 

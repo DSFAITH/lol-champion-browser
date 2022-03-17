@@ -1,4 +1,4 @@
-import node from 'nodemon'
+import nodemon from 'nodemon'
 
 
 
