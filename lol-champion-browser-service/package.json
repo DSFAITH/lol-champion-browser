@@ -1,15 +1,15 @@
 {
   "name": "lol-champion-browser",
   "version": "1.0.0",
-  "description": "\"A League of Legends champion browser service\"",
+  "description": "A League of Legends champions browser service",
   "main": "index.js",
   "type": "module",
   "directories": {
     "doc": "../docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
