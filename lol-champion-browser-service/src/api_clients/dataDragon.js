@@ -18,7 +18,7 @@ export async function getChampionData() {
     const championResponse = await fetch(championURL)
     championData = await championResponse.json()
 
-    deriveSquareImageURLs(Object.values(championData.data), realmData.cdn, fetchedVersion)
+    deriveImageURLs(Object.values(championData.data), realmData.cdn, fetchedVersion)
 
     return championData
 }
@@ -28,6 +28,9 @@ async function getRealmData() {
     return await realmResponse.json()
 }
 
-function deriveSquareImageURLs(champions, baseURL, version) {
-    champions.forEach(champion => champion.squareImageURL = `${baseURL}/${version}/img/champion/${champion.id}.png`)
+function deriveImageURLs(champions, baseURL, version) {
+    champions.forEach(champion => {
+        champion.squareImageURL = `${baseURL}/${version}/img/champion/${champion.id}.png`
+        champion.loadingImageURL = `${baseURL}/img/champion/loading/${champion.id}_0.jpg`
+})
 }

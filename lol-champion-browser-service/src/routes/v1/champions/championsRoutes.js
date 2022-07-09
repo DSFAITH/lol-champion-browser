@@ -40,9 +40,8 @@ function transformChampions(champions) {
 }
 
 function transformChampion(champion) {
-    const { id, name, title, blurb, tags, squareImageURL } = champion
-    return { id, name, title, blurb, tags, squareImageURL }
-
+    const { id, name, title, blurb, tags, squareImageURL, loadingImageURL } = champion
+    return { id, name, title, blurb, tags, squareImageURL, loadingImageURL }
 }
 
 export { registerChampionsRoutes }
