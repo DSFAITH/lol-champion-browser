@@ -5,7 +5,6 @@
 
 .ChampionsList {
   background-color: black;
-  padding: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -16,18 +15,87 @@
 }
   .ChampionPanel {
     cursor: pointer;
-    background-color: black;
     height: 218px;
     width: 120px;
     display: flex;
     flex-direction: column;
   }
-  
+
   .Header {
-    height: 100px;
-    background-color: green;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: left;
+    column-gap: 10px;
+    background-image: linear-gradient(to left, black, red);
+    font-family:fantasy;
+    font-size: 20px;
+    line-height: 10px;
+    padding-top: 15px;
+    padding-left: 40px;
+    color: cccccc; 
+    
+  }
+  input {
+    display: flex;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    width: 100px;
+    margin: 2.5px;
+    background-color: cccccc; 
+
+  }
+
+
+  #label {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: cccccc;
+    align-items: center;
+    
+    
+    
   }
   
+  
+  
+ 
+  button {
+
+    display: inline-block;
+    background-color: cccccc;
+    
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #black;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    width: 50px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2.5px; }
+  
+  button:hover {
+    background-color: #f7c2f9;
+  }
+  button:hover span {
+    padding-right: 25px;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
   .image {
     height: 218px;
     width: 126px;
@@ -84,3 +152,5 @@
     from { background-color: dodgerblue; font-weight: normal; font-style: italic; color: white; padding-left: 15px }
     to { background-color: white; font-weight: normal; font-style: normal; color: black; padding-left: 5px }
   }
+
+
